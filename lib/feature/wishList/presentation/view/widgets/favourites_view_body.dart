@@ -19,7 +19,7 @@ class FavouritesViewBody extends StatelessWidget {
             return const CartIsEmptyWidget();
           }
           return ListView.separated(
-            physics: BouncingScrollPhysics(),
+            physics: const BouncingScrollPhysics(),
             padding: EdgeInsets.all(AppConstants.defaultPadding),
             itemBuilder: (context, index) {
               return WishListviewItemHorizontal(

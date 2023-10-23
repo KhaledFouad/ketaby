@@ -21,19 +21,24 @@ class _CartViewState extends State<CartView> {
 
   @override
   Widget build(BuildContext context) {
-    // var favourites;
+
     return BlocBuilder<GetCartCubit, GetCartState>(builder: (context, state) {
-      return Scaffold(
-          appBar: AppBar(
-            title: const Text("Cart"),
-          ),
-          body: const CartViewBody(),
-          bottomNavigationBar: CheckOutButton(
-            price:
-                GetCartCubit.get(context).products!.data!.cartItems!.isNotEmpty
-                    ? GetCartCubit.get(context).products!.data!.total!
-                    : "0.00",
-          ));
+      if (state is GetCartSuccessState) {
+        return Scaffold(
+            appBar: AppBar(
+              title: const Text("Cart"),
+            ),
+            body: const CartViewBody(),
+            bottomNavigationBar: CheckOutButton(
+                price:
+                    // GetCartCubit.get(context).products!.data!.cartItems!.isNotEmpty
+                    //     ?
+                    state.prudutes.data!.total!
+                // :
+                // "0.00",
+                ));
+      }
+      return const SizedBox.shrink();
     });
   }
 }

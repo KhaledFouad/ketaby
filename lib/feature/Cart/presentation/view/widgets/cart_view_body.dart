@@ -9,13 +9,14 @@ import 'package:ketaby/feature/Cart/presentation/view/widgets/cartviewItemHorizo
 
 class CartViewBody extends StatelessWidget {
   const CartViewBody({Key? key}) : super(key: key);
-
+   
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<GetCartCubit, GetCartState>(
       builder: (context, state) {
         if (state is GetCartSuccessState) {
           if (state.prudutes.data!.cartItems!.isEmpty) {
+            
             return const CartIsEmptyWidget();
           }
           return ListView.separated(
@@ -37,7 +38,7 @@ class CartViewBody extends StatelessWidget {
         } else if (state is GetCartFailureState) {
           return CustomErrorWidget(error: state.error);
         } else {
-          return const CartIsEmptyWidget();
+          return const SizedBox();
         }
       },
     );

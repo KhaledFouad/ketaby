@@ -16,7 +16,7 @@ class Data {
         user: json['user'] == null
             ? null
             : User.fromJson(json['user'] as Map<String, dynamic>),
-        total: json['total'] as String?,
+        total: (json['total'] ?? "0.00") as String,
         cartItems: (json['cart_items'] as List<dynamic>?)
             ?.map((e) => CartItem.fromJson(e as Map<String, dynamic>))
             .toList(),
