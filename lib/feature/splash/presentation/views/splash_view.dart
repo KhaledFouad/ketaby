@@ -34,7 +34,7 @@ class _SplashViewState extends State<SplashView> {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return  const Scaffold(
       resizeToAvoidBottomInset: false,
       body: AnnotatedRegion<SystemUiOverlayStyle>(
         value: AppConstants.systemUiOverlayStyleDark,
