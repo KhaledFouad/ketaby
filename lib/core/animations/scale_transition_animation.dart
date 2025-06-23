@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 class ScaleTransitionAnimation extends StatefulWidget {
   const ScaleTransitionAnimation({
-    Key? key,
+    super.key,
     required this.child,
     required this.duration,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final Duration duration;

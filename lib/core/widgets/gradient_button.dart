@@ -5,11 +5,11 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class GradientButton extends StatelessWidget {
   const GradientButton({
-    Key? key,
+    super.key,
     required this.onPressed,
     required this.title,
     this.radius,
-  }) : super(key: key);
+  });
 
   final VoidCallback? onPressed;
   final String title;

@@ -6,10 +6,10 @@ class LoadingIndicatorWidget extends StatelessWidget {
   final Color color;
 
   const LoadingIndicatorWidget({
-    Key? key,
+    super.key,
     this.strokeWidth = 4.0,
     this.color = AppColors.primaryColor,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

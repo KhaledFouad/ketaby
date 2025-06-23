@@ -66,7 +66,7 @@ class _HomeAppBarState extends State<HomeAppBar> {
             ),
           );
         }
-        return SizedBox();
+        return const SizedBox();
       },
     );
   }

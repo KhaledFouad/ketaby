@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 
 class SlideTransitionAnimation extends StatefulWidget {
   const SlideTransitionAnimation({
-    Key? key,
+    super.key,
     required this.child,
     required this.duration,
     required this.begin,
     required this.end,
     this.curve,
-  }) : super(key: key);
+  });
 
   final Widget child;
   final Duration duration;

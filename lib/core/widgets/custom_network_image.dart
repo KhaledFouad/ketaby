@@ -13,13 +13,13 @@ class CustomNetworkImage extends StatelessWidget {
   final Color textColor;
   final BoxFit boxfit;
   const CustomNetworkImage(
-      {Key? key,
+      {super.key,
       required this.borderRadius,
       required this.image,
       required this.discount,
       required this.color,
-      required this.textColor, required this.boxfit})
-      : super(key: key);
+      required this.textColor,
+      required this.boxfit});
 
   @override
   Widget build(BuildContext context) {

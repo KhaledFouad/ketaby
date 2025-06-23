@@ -8,7 +8,7 @@ import 'package:ketaby/feature/books/presentation/view/widgets/books_view_body.d
 import 'package:ketaby/feature/books/presentation/view/widgets/search_text_field.dart';
 
 class BooksView extends StatefulWidget {
-  const BooksView({Key? key}) : super(key: key);
+  const BooksView({super.key});
 
   @override
   State<BooksView> createState() => _BooksViewState();

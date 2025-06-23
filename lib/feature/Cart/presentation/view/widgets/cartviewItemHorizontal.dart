@@ -13,11 +13,11 @@ import 'package:ketaby/feature/Cart/presentation/cubits/update_cart_cubit/update
 
 class CartListviewItemHorizontal extends StatelessWidget {
   const CartListviewItemHorizontal({
-    Key? key,
+    super.key,
     required this.book,
     required this.index,
     // required this.product
-  }) : super(key: key);
+  });
 
   final Cart book;
   final int index;

@@ -9,8 +9,8 @@ import 'package:ketaby/feature/home/presentation/views/widgets/BookCard.dart';
 
 class BooksListView2 extends StatelessWidget {
   const BooksListView2({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -37,7 +37,7 @@ class BooksListView2 extends StatelessWidget {
         } else if (state is NewArrivalFailureState) {
           return CustomErrorWidget(error: state.error.toString());
         } else {
-          return SizedBox();
+          return const SizedBox();
         }
       },
     );

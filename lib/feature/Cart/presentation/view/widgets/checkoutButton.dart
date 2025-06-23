@@ -34,12 +34,12 @@ class CheckOutButton extends StatelessWidget {
                   width: 120.w,
                   child: TextButton(
                       style: ButtonStyle(
-                          shape: MaterialStateProperty.all(
+                          shape: WidgetStateProperty.all(
                             RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(40.sp)),
                           ),
                           backgroundColor:
-                              const MaterialStatePropertyAll(AppColors.white)),
+                              const WidgetStatePropertyAll(AppColors.white)),
                       onPressed: () {
                         if (cartModel!.data!.cartItems!.isNotEmpty) {
                           Navigator.pushNamed(context, Routes.checkoutView);

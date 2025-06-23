@@ -7,9 +7,9 @@ import 'package:ketaby/feature/profile/presentation/views/widgets/update_profile
 
 class UpdateProfileView extends StatefulWidget {
   const UpdateProfileView({
-    Key? key,
+    super.key,
     required this.profileModel,
-  }) : super(key: key);
+  });
 
   final ProfileModel profileModel;
 

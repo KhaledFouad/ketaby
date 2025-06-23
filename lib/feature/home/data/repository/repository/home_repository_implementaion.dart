@@ -25,7 +25,7 @@ class HomeRepositoryImplementation extends HomeRepository {
       );
       return Right(SliderModel.fromJson(data.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -42,7 +42,7 @@ class HomeRepositoryImplementation extends HomeRepository {
       );
       return Right(BestSellerModel.fromJson(response.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -59,7 +59,7 @@ class HomeRepositoryImplementation extends HomeRepository {
       );
       return Right(NewArrivalModel.fromJson(response.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -76,7 +76,7 @@ class HomeRepositoryImplementation extends HomeRepository {
       );
       return Right(CategoriesModel.fromJson(data.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));

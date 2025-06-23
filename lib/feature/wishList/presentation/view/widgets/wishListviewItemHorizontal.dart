@@ -12,11 +12,9 @@ import 'package:ketaby/feature/books/data/model/books_model/product.dart';
 import 'package:ketaby/feature/wishList/presentation/cubits/get_favourites_cubit/get_favourites_cubit.dart';
 import 'package:ketaby/feature/wishList/presentation/cubits/remove_favourites_cubit/remove_favourites_cubit.dart';
 
-
 class WishListviewItemHorizontal extends StatelessWidget {
   const WishListviewItemHorizontal(
-      {Key? key, required this.book, required this.index})
-      : super(key: key);
+      {super.key, required this.book, required this.index});
 
   final Product book;
   final int index;

@@ -5,7 +5,7 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class CustomDropdown extends StatelessWidget {
   const CustomDropdown({
-    Key? key,
+    super.key,
     this.validator,
     required this.title,
     required this.hintText,
@@ -14,7 +14,7 @@ class CustomDropdown extends StatelessWidget {
     required this.messageForValidate,
     required this.items,
     required this.onChange,
-  }) : super(key: key);
+  });
 
   final String? Function(String?)? validator;
   final String title;

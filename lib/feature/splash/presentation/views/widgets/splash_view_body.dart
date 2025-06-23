@@ -8,7 +8,7 @@ import 'package:lottie/lottie.dart';
 import 'package:page_transition/page_transition.dart';
 
 class SplashViewBody extends StatelessWidget {
-  const SplashViewBody({Key? key}) : super(key: key);
+  const SplashViewBody({super.key});
   @override
   Widget build(BuildContext context) {
     return AnimatedSplashScreen(

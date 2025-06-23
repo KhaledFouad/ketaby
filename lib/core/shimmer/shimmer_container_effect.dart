@@ -4,14 +4,14 @@ import 'package:shimmer/shimmer.dart';
 
 class ShimmerContainerEffect extends StatelessWidget {
   const ShimmerContainerEffect({
-    Key? key,
+    super.key,
     this.width,
     this.height,
     this.borderRadius,
     this.baseColor,
     this.highlightColor,
     this.margin,
-  }) : super(key: key);
+  });
 
   final double? width;
   final double? height;

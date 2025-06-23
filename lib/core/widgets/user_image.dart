@@ -11,43 +11,45 @@ import 'package:ketaby/feature/profile/presentation/cubits/get_user_profile_stat
 
 class UserImage extends StatelessWidget {
   const UserImage({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return BlocBuilder<GetUserProfileCubit,GetUserProfileState>(builder: (context, state) {
-      if(state is GetUserProfileSuccessState){
-        return InkWell(
-          onTap: (){
-            Navigator.pushNamed(context, Routes.profile);
-          },
-          child: CircleAvatar(
-            radius: 24.sp,
-            backgroundColor: AppColors.primaryColor,
+    return BlocBuilder<GetUserProfileCubit, GetUserProfileState>(
+      builder: (context, state) {
+        if (state is GetUserProfileSuccessState) {
+          return InkWell(
+            onTap: () {
+              Navigator.pushNamed(context, Routes.profile);
+            },
             child: CircleAvatar(
-              radius: 22.sp,
-              backgroundColor: AppColors.white,
-              child: CachedNetworkImage(
-                imageUrl: state.profileModel.data!.image!,
-                fit: BoxFit.cover,
-                height: double.infinity,
-                errorWidget: (context, url, error) => Icon(
-                  IconBroken.Info_Square,
-                  color: AppColors.primaryColor,
-                  size: AppConstants.iconSize24,
-                ),
-                imageBuilder: (context, imageProvider) => CircleAvatar(
-                  backgroundImage: imageProvider,
-                  radius: 20.sp,
+              radius: 24.sp,
+              backgroundColor: AppColors.primaryColor,
+              child: CircleAvatar(
+                radius: 22.sp,
+                backgroundColor: AppColors.white,
+                child: CachedNetworkImage(
+                  imageUrl: state.profileModel.data!.image!,
+                  fit: BoxFit.cover,
+                  height: double.infinity,
+                  errorWidget: (context, url, error) => Icon(
+                    IconBroken.Info_Square,
+                    color: AppColors.primaryColor,
+                    size: AppConstants.iconSize24,
+                  ),
+                  imageBuilder: (context, imageProvider) => CircleAvatar(
+                    backgroundImage: imageProvider,
+                    radius: 20.sp,
+                  ),
                 ),
               ),
             ),
-          ),
-        );
-      }else{
-        return const  SizedBox();
-      }
-    },);
+          );
+        } else {
+          return const SizedBox();
+        }
+      },
+    );
   }
 }

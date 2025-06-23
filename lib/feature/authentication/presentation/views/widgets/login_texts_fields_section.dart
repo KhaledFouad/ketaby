@@ -7,7 +7,7 @@ import 'package:ketaby/feature/authentication/presentation/cubits/login_cubit/lo
 import 'package:ketaby/feature/authentication/presentation/cubits/login_cubit/login_state.dart';
 
 class LoginTextsFieldsSection extends StatelessWidget {
-  const LoginTextsFieldsSection({Key? key}) : super(key: key);
+  const LoginTextsFieldsSection({super.key});
 
   @override
   Widget build(BuildContext context) {

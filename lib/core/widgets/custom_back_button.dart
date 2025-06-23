@@ -4,7 +4,7 @@ import 'package:ketaby/core/utils/app_colors.dart';
 import 'package:ketaby/core/utils/app_constants.dart';
 
 class CustomBackButton extends StatelessWidget {
-  const CustomBackButton({Key? key, this.color}) : super(key: key);
+  const CustomBackButton({super.key, this.color});
   final Color? color;
   @override
   Widget build(BuildContext context) {

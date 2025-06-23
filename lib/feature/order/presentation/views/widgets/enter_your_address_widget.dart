@@ -5,12 +5,12 @@ import 'package:ketaby/core/utils/app_constants.dart';
 import 'package:ketaby/core/utils/app_styles.dart';
 
 class EnterYourAddressWidget extends StatelessWidget {
-  const EnterYourAddressWidget({Key? key}) : super(key: key);
+  const EnterYourAddressWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.only(bottom:AppConstants.padding10h),
+      padding: EdgeInsets.only(bottom: AppConstants.padding10h),
       child: Row(
         children: [
           Expanded(
@@ -23,8 +23,11 @@ class EnterYourAddressWidget extends StatelessWidget {
             ),
           ),
           Padding(
-            padding:  EdgeInsets.symmetric(horizontal:AppConstants.padding8w),
-            child: Text('Enter Your Address',style: AppStyles.textStyle16,),
+            padding: EdgeInsets.symmetric(horizontal: AppConstants.padding8w),
+            child: Text(
+              'Enter Your Address',
+              style: AppStyles.textStyle16,
+            ),
           ),
           Expanded(
             child: Container(

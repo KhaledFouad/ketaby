@@ -6,7 +6,7 @@ import 'package:ketaby/feature/order/presentation/views/widgets/checkout_confirm
 import 'package:ketaby/feature/order/presentation/views/widgets/checkout_view_body.dart';
 
 class CheckoutView extends StatefulWidget {
-  const CheckoutView({Key? key}) : super(key: key);
+  const CheckoutView({super.key});
 
   @override
   State<CheckoutView> createState() => _CheckoutViewState();

@@ -11,7 +11,7 @@ import 'package:ketaby/feature/onboarding/presentation/cubit/onboarding_state.da
 import 'package:ketaby/feature/onboarding/presentation/views/widgets/gradient_container_widget.dart';
 
 class CustomButtonWidget extends StatelessWidget {
-  const CustomButtonWidget({Key? key}) : super(key: key);
+  const CustomButtonWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

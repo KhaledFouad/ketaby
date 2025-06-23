@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class GradientContainerWidget extends StatelessWidget {
   const GradientContainerWidget({
-    Key? key,
+    super.key,
     this.child,
     this.width,
     this.height,
@@ -12,7 +12,7 @@ class GradientContainerWidget extends StatelessWidget {
     required this.colors,
     required this.begin,
     required this.end,
-  }) : super(key: key);
+  });
 
   final double? width, height, radius;
   final List<Color> colors;

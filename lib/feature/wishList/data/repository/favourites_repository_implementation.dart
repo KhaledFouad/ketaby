@@ -24,7 +24,7 @@ class FavouritesRepositoryImplementation extends FavouritesRepository {
         return Product.fromJson(product);
       }).toList());
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message']));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -47,7 +47,7 @@ class FavouritesRepositoryImplementation extends FavouritesRepository {
         return Product.fromJson(product);
       }).toList());
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message']));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -70,7 +70,7 @@ class FavouritesRepositoryImplementation extends FavouritesRepository {
         return Product.fromJson(product);
       }).toList());
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         print(error);
         return Left(ServerFailure(error.response!.data['message']));
       } else {

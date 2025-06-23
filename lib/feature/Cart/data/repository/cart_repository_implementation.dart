@@ -28,7 +28,7 @@ class CartRepositoryImplementation extends CartRepository {
       // }).toList());
     } catch (error) {
       print(error);
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message']));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -51,7 +51,7 @@ class CartRepositoryImplementation extends CartRepository {
         return CartItem.fromJson(product);
       }).toList());
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message']));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -59,7 +59,7 @@ class CartRepositoryImplementation extends CartRepository {
     }
   }
 
- @override
+  @override
   Future<Either<Failure, Cart>> updateCart(
       {required String bookId, required String quantity}) async {
     try {
@@ -73,7 +73,7 @@ class CartRepositoryImplementation extends CartRepository {
       );
       return Right(Cart.fromJson(data.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message']));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -97,7 +97,7 @@ class CartRepositoryImplementation extends CartRepository {
         return CartItem.fromJson(product);
       }).toList());
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message']));
       } else {
         return Left(ServerFailure(error.toString()));

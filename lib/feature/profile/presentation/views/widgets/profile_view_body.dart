@@ -12,8 +12,8 @@ import 'package:ketaby/feature/profile/presentation/views/widgets/profile_item_w
 
 class ProfileViewBody extends StatelessWidget {
   const ProfileViewBody({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

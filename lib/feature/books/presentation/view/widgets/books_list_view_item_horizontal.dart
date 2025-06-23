@@ -14,8 +14,7 @@ import 'package:ketaby/feature/wishList/presentation/cubits/add_favourites_cubit
 
 class BooksListViewItemHorizontal extends StatelessWidget {
   const BooksListViewItemHorizontal(
-      {Key? key, required this.book, required this.index})
-      : super(key: key);
+      {super.key, required this.book, required this.index});
 
   final Product book;
   final int index;
@@ -43,7 +42,8 @@ class BooksListViewItemHorizontal extends StatelessWidget {
                 image: book.image!,
                 discount: book.discount!,
                 color: AppColors.primaryColor.withOpacity(0.9),
-                textColor: AppColors.white, boxfit: BoxFit.cover,
+                textColor: AppColors.white,
+                boxfit: BoxFit.cover,
               ),
             ),
             Expanded(
@@ -107,7 +107,7 @@ class BooksListViewItemHorizontal extends StatelessWidget {
                         const Spacer(),
                         CustomContainerButton(
                           onTap: () {
-                           AddToFavouritesCubit.get(context)
+                            AddToFavouritesCubit.get(context)
                                 .addToFavourites(
                               bookId: book.id.toString(),
                             )

@@ -8,15 +8,14 @@ import 'package:ketaby/feature/Cart/presentation/view/widgets/cart_is_empty_widg
 import 'package:ketaby/feature/Cart/presentation/view/widgets/cartviewItemHorizontal.dart';
 
 class CartViewBody extends StatelessWidget {
-  const CartViewBody({Key? key}) : super(key: key);
-   
+  const CartViewBody({super.key});
+
   @override
   Widget build(BuildContext context) {
     return BlocBuilder<GetCartCubit, GetCartState>(
       builder: (context, state) {
         if (state is GetCartSuccessState) {
           if (state.prudutes.data!.cartItems!.isEmpty) {
-            
             return const CartIsEmptyWidget();
           }
           return ListView.separated(

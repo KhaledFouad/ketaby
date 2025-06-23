@@ -3,7 +3,7 @@ import 'package:ketaby/core/widgets/custom_text_field.dart';
 import 'package:ketaby/feature/order/presentation/cubits/get_checkout_data_cubit/get_checkout_data_cubit.dart';
 
 class CheckoutTextsFieldsSection extends StatelessWidget {
-  const CheckoutTextsFieldsSection({Key? key}) : super(key: key);
+  const CheckoutTextsFieldsSection({super.key});
 
   @override
   Widget build(BuildContext context) {

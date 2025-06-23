@@ -3,7 +3,7 @@ import 'package:ketaby/feature/wishList/presentation/cubits/get_favourites_cubit
 import 'package:ketaby/feature/wishList/presentation/view/widgets/favourites_view_body.dart';
 
 class FavouritesView extends StatefulWidget {
-  const FavouritesView({Key? key}) : super(key: key);
+  const FavouritesView({super.key});
 
   @override
   State<FavouritesView> createState() => _FavouritesViewState();

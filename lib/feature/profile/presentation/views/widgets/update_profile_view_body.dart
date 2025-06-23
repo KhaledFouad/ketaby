@@ -11,8 +11,7 @@ import 'package:ketaby/feature/profile/presentation/views/widgets/image_user_pro
 import 'package:ketaby/feature/profile/presentation/views/widgets/update_profile_texts_fields_section.dart';
 
 class UpdateProfileViewBody extends StatelessWidget {
-  const UpdateProfileViewBody({Key? key, required this.profileModel})
-      : super(key: key);
+  const UpdateProfileViewBody({super.key, required this.profileModel});
 
   final ProfileModel profileModel;
 

@@ -6,7 +6,7 @@ import 'package:ketaby/feature/Cart/presentation/view/widgets/cart_view_body.dar
 import 'package:ketaby/feature/Cart/presentation/view/widgets/checkoutButton.dart';
 
 class CartView extends StatefulWidget {
-  const CartView({Key? key}) : super(key: key);
+  const CartView({super.key});
 
   @override
   State<CartView> createState() => _CartViewState();
@@ -21,7 +21,6 @@ class _CartViewState extends State<CartView> {
 
   @override
   Widget build(BuildContext context) {
-
     return BlocBuilder<GetCartCubit, GetCartState>(builder: (context, state) {
       if (state is GetCartSuccessState) {
         return Scaffold(

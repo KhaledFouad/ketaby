@@ -6,8 +6,7 @@ import 'package:ketaby/feature/books/data/model/books_model/product.dart';
 import 'package:ketaby/feature/home/presentation/views/widgets/book_details_bottom_nav_bar_add_to_cart.dart';
 
 class BookDetailBottomNavBar extends StatelessWidget {
-  const BookDetailBottomNavBar({Key? key, required this.book})
-      : super(key: key);
+  const BookDetailBottomNavBar({super.key, required this.book});
 
   final Product book;
 

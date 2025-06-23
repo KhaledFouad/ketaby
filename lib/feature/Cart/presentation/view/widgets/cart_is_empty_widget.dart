@@ -7,7 +7,7 @@ import 'package:ketaby/core/utils/app_constants.dart';
 import 'package:ketaby/core/utils/app_styles.dart';
 
 class CartIsEmptyWidget extends StatelessWidget {
-  const CartIsEmptyWidget({Key? key}) : super(key: key);
+  const CartIsEmptyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -8,7 +8,7 @@ import 'package:ketaby/feature/wishList/presentation/cubits/get_favourites_cubit
 import 'package:ketaby/feature/wishList/presentation/view/widgets/wishListviewItemHorizontal.dart';
 
 class FavouritesViewBody extends StatelessWidget {
-  const FavouritesViewBody({Key? key}) : super(key: key);
+  const FavouritesViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

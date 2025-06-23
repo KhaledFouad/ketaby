@@ -6,7 +6,7 @@ import 'package:ketaby/feature/home/presentation/views/widgets/book_details_bott
 import 'package:ketaby/feature/home/presentation/views/widgets/book_details_view_body.dart';
 
 class BookDetailsView extends StatelessWidget {
-  const BookDetailsView({Key? key, required this.book}) : super(key: key);
+  const BookDetailsView({super.key, required this.book});
 
   final Product book;
 

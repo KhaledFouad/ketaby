@@ -3,7 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ketaby/core/utils/app_colors.dart';
 
 class ImageUserProfile extends StatelessWidget {
-  const ImageUserProfile({Key? key, required this.imagee}) : super(key: key);
+  const ImageUserProfile({super.key, required this.imagee});
   final String imagee;
   @override
   Widget build(BuildContext context) {

@@ -10,8 +10,8 @@ import 'package:ketaby/feature/home/presentation/views/widgets/BookCard.dart';
 
 class BooksListView extends StatelessWidget {
   const BooksListView({
-    Key? key,
-  }) : super(key: key);
+    super.key,
+  });
 
   @override
   Widget build(BuildContext context) {

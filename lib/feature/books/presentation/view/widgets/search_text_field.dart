@@ -5,10 +5,10 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class SearchTextField extends StatelessWidget {
   const SearchTextField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.onChange,
-  }) : super(key: key);
+  });
 
   final TextEditingController controller;
   final Function(String) onChange;

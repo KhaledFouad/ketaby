@@ -4,7 +4,7 @@ import 'package:ketaby/core/utils/app_colors.dart';
 import 'package:shimmer/shimmer.dart';
 
 class ShimmerCircleAvatarEffect extends StatelessWidget {
-  const ShimmerCircleAvatarEffect({Key? key}) : super(key: key);
+  const ShimmerCircleAvatarEffect({super.key});
 
   @override
   Widget build(BuildContext context) {

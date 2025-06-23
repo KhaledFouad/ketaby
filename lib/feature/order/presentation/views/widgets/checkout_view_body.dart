@@ -13,7 +13,7 @@ import 'package:ketaby/feature/order/presentation/views/widgets/enter_your_addre
 import 'package:ketaby/feature/order/presentation/views/widgets/governorates_dropdown.dart';
 
 class CheckoutViewBody extends StatelessWidget {
-  const CheckoutViewBody({Key? key}) : super(key: key);
+  const CheckoutViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -25,11 +25,13 @@ class CheckoutViewBody extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             child: Form(
               key: GetCheckoutDataCubit.get(context).formKey,
-              child: BlocBuilder<CreateOrderCubit,CreateOrderState>(
+              child: BlocBuilder<CreateOrderCubit, CreateOrderState>(
                 builder: (context, state) {
-                  return  Column(
+                  return Column(
                     children: [
-                      state is CreateOrderLoadingState?const  LinearProgressIndicator():const SizedBox(),
+                      state is CreateOrderLoadingState
+                          ? const LinearProgressIndicator()
+                          : const SizedBox(),
                       const EnterYourAddressWidget(),
                       const CheckoutTextsFieldsSection(),
                       const GovernoratesDropdown(),

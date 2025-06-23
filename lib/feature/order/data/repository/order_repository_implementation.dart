@@ -23,7 +23,7 @@ class OrderRepositoryImplementation extends OrderRepository {
       );
       return Right(CheckoutModel.fromJson(response.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -40,7 +40,7 @@ class OrderRepositoryImplementation extends OrderRepository {
       );
       return Right(GovernoratesModel.fromJson(response.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));
@@ -55,22 +55,21 @@ class OrderRepositoryImplementation extends OrderRepository {
     required String address,
     required String phone,
     required String governoratesId,
-  }) async{
+  }) async {
     try {
       Response response = await apiServices.post(
-        endPoint: EndPoints.createOrder,
-        token: AppConstants.token,
-        data: {
-          'name':name,
-          'email':email,
-          'address':address,
-          'phone':phone,
-          'governorate_id':governoratesId,
-        }
-      );
+          endPoint: EndPoints.createOrder,
+          token: AppConstants.token,
+          data: {
+            'name': name,
+            'email': email,
+            'address': address,
+            'phone': phone,
+            'governorate_id': governoratesId,
+          });
       return Right(CreateOrderModel.fromJson(response.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         print(error.response!.data.toString());
         return Left(ServerFailure(error.response!.data.toString()));
       } else {

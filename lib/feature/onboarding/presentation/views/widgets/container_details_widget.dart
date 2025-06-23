@@ -11,7 +11,7 @@ import 'package:ketaby/feature/onboarding/presentation/views/widgets/onboarding_
 import 'package:ketaby/feature/onboarding/presentation/views/widgets/page_indicator_widget.dart';
 
 class ContainerDetailsWidget extends StatelessWidget {
-  const ContainerDetailsWidget({Key? key}) : super(key: key);
+  const ContainerDetailsWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

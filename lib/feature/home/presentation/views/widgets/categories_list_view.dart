@@ -9,7 +9,7 @@ import 'package:ketaby/feature/home/presentation/cubits/categories_cubit/categor
 import 'package:ketaby/feature/home/presentation/cubits/categories_cubit/categories_state.dart';
 
 class CategoriesListView extends StatelessWidget {
-  const CategoriesListView({Key? key}) : super(key: key);
+  const CategoriesListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +72,7 @@ class CategoriesListView extends StatelessWidget {
         } else if (state is CategoriesFailureState) {
           return CustomErrorWidget(error: state.error);
         } else {
-          return SizedBox();
+          return const SizedBox();
         }
       },
     );

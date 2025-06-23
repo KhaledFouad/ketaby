@@ -7,7 +7,7 @@ import 'package:ketaby/feature/profile/presentation/cubits/get_user_profile_cubi
 import 'package:ketaby/feature/profile/presentation/views/widgets/profile_view_body.dart';
 
 class ProfileView extends StatefulWidget {
-  const ProfileView({Key? key}) : super(key: key);
+  const ProfileView({super.key});
 
   @override
   State<ProfileView> createState() => _ProfileViewState();
@@ -35,8 +35,7 @@ class _ProfileViewState extends State<ProfileView> {
       backgroundColor: AppColors.white,
       body: const AnnotatedRegion(
         value: AppConstants.systemUiOverlayStyleDark,
-        child: ProfileViewBody(
-        ),
+        child: ProfileViewBody(),
       ),
     );
   }

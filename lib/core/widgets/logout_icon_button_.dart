@@ -6,7 +6,7 @@ import 'package:ketaby/core/utils/app_colors.dart';
 import 'package:ketaby/core/utils/app_constants.dart';
 
 class LogoutIconButton extends StatelessWidget {
-  const LogoutIconButton({Key? key}) : super(key: key);
+  const LogoutIconButton({super.key});
 
   @override
   Widget build(BuildContext context) {

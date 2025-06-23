@@ -7,7 +7,7 @@ import 'package:ketaby/feature/authentication/presentation/cubits/login_cubit/lo
 import 'package:ketaby/feature/authentication/presentation/cubits/login_cubit/login_state.dart';
 
 class KeepMeLoggedIn extends StatelessWidget {
-  const KeepMeLoggedIn({Key? key}) : super(key: key);
+  const KeepMeLoggedIn({super.key});
 
   @override
   Widget build(BuildContext context) {

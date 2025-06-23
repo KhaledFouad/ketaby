@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 
 class FadeTransitionAnimation extends StatefulWidget {
   const FadeTransitionAnimation(
-      {Key? key, required this.child, required this.duration})
-      : super(key: key);
+      {super.key, required this.child, required this.duration});
 
   final Widget child;
   final Duration duration;

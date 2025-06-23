@@ -14,7 +14,7 @@ import 'package:ketaby/feature/authentication/presentation/views/widgets/registe
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class RegisterViewBody extends StatelessWidget {
-  const RegisterViewBody({Key? key}) : super(key: key);
+  const RegisterViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -42,7 +42,6 @@ class RegisterViewBody extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 24.sp, vertical: 50.sp),
               child: SingleChildScrollView(
                 physics: const BouncingScrollPhysics(),
-                
                 child: Form(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

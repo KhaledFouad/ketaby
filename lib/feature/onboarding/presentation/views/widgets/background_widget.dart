@@ -3,7 +3,7 @@ import 'package:ketaby/core/utils/app_colors.dart';
 import 'package:ketaby/feature/onboarding/presentation/views/widgets/gradient_container_widget.dart';
 
 class BackgroundWidget extends StatelessWidget {
-  const BackgroundWidget({Key? key, this.child}) : super(key: key);
+  const BackgroundWidget({super.key, this.child});
 
   final Widget? child;
 

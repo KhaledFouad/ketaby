@@ -5,8 +5,7 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class TitleAndSubtitle extends StatelessWidget {
   const TitleAndSubtitle(
-      {Key? key, required this.subtitle, required this.title})
-      : super(key: key);
+      {super.key, required this.subtitle, required this.title});
 
   final String title;
   final String subtitle;

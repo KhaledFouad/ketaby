@@ -13,7 +13,7 @@ import 'package:ketaby/feature/order/presentation/cubits/get_checkout_data_cubit
 import 'package:ketaby/feature/order/presentation/cubits/get_governorates_cubit/get_governorates_cubit.dart';
 
 class CheckoutConfirmSection extends StatelessWidget {
-  const CheckoutConfirmSection({Key? key}) : super(key: key);
+  const CheckoutConfirmSection({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -73,7 +73,8 @@ class CheckoutConfirmSection extends StatelessWidget {
                       context: context,
                     )
                         .then((value) {
-                      Navigator.pushNamedAndRemoveUntil(context, Routes.layout, (route) => false);
+                      Navigator.pushNamedAndRemoveUntil(
+                          context, Routes.layout, (route) => false);
                       GetCartCubit.get(context).getCart();
                     });
                   }

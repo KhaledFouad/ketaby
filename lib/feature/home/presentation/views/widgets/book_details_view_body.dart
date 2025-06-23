@@ -9,7 +9,7 @@ import 'package:ketaby/feature/books/data/model/books_model/product.dart';
 import 'package:ketaby/feature/wishList/presentation/cubits/add_favourites_cubit/add_favourites_cubit.dart';
 
 class BookDetailsViewBody extends StatelessWidget {
-  const BookDetailsViewBody({Key? key, required this.book}) : super(key: key);
+  const BookDetailsViewBody({super.key, required this.book});
 
   final Product book;
 

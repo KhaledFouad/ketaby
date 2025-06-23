@@ -8,7 +8,7 @@ import 'package:ketaby/feature/books/presentation/cubit/books_state.dart';
 import 'package:ketaby/feature/books/presentation/view/widgets/books_list_view_item_horizontal.dart';
 
 class BooksViewBody extends StatelessWidget {
-  const BooksViewBody({Key? key}) : super(key: key);
+  const BooksViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

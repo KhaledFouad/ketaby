@@ -15,7 +15,7 @@ import 'package:ketaby/feature/authentication/presentation/views/widgets/navigat
 import 'package:modal_progress_hud_nsn/modal_progress_hud_nsn.dart';
 
 class LoginViewBody extends StatelessWidget {
-  const LoginViewBody({Key? key}) : super(key: key);
+  const LoginViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

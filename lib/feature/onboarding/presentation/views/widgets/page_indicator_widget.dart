@@ -5,7 +5,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class PageIndicatorWidget extends StatelessWidget {
   const PageIndicatorWidget({
-    Key? key,
+    super.key,
     this.spacing,
     this.radius,
     this.dotWidth,
@@ -14,7 +14,7 @@ class PageIndicatorWidget extends StatelessWidget {
     this.activeDotColor,
     required this.pageController,
     required this.count,
-  }) : super(key: key);
+  });
 
   final double? spacing, radius, dotWidth, dotHeight;
   final Color? dotColor, activeDotColor;

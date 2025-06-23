@@ -12,7 +12,7 @@ import 'package:ketaby/feature/onboarding/presentation/views/widgets/container_d
 import 'package:ketaby/feature/onboarding/presentation/views/widgets/logo_widget.dart';
 
 class OnBoardingViewBody extends StatelessWidget {
-  const OnBoardingViewBody({Key? key}) : super(key: key);
+  const OnBoardingViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {

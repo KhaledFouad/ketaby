@@ -4,15 +4,14 @@ import 'package:ketaby/core/utils/app_constants.dart';
 
 class CustomContainerButton extends StatelessWidget {
   const CustomContainerButton(
-      {Key? key,
+      {super.key,
       required this.onTap,
       required this.icon,
       this.padding,
       required this.color,
       this.radius,
       this.backgroundColor,
-      this.iconSize})
-      : super(key: key);
+      this.iconSize});
 
   final void Function() onTap;
   final IconData icon;

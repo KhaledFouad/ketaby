@@ -6,11 +6,11 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class ProfileItemWidget extends StatelessWidget {
   const ProfileItemWidget({
-    Key? key,
+    super.key,
     required this.title,
     required this.content,
     required this.onTap,
-  }) : super(key: key);
+  });
 
   final String title;
   final String content;

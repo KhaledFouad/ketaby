@@ -8,8 +8,7 @@ import 'package:ketaby/feature/Cart/presentation/cubits/add_to_cart_cubit/add_to
 import 'package:ketaby/feature/books/data/model/books_model/product.dart';
 
 class BookDetailBottomNavBarAddToCart extends StatelessWidget {
-  const BookDetailBottomNavBarAddToCart({Key? key, required this.book})
-      : super(key: key);
+  const BookDetailBottomNavBarAddToCart({super.key, required this.book});
 
   final Product book;
 

@@ -4,11 +4,11 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class NavigateToLoginOrRegister extends StatelessWidget {
   const NavigateToLoginOrRegister({
-    Key? key,
+    super.key,
     required this.textTitle,
     required this.buttonTitle,
     this.onPressed,
-  }) : super(key: key);
+  });
 
   final String textTitle;
   final String buttonTitle;

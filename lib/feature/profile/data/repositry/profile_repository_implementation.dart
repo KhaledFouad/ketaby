@@ -23,7 +23,7 @@ class ProfileRepositoryImplementation extends ProfileRepository {
       );
       return Right(ProfileModel.fromJson(data.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         print(error);
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
@@ -54,7 +54,7 @@ class ProfileRepositoryImplementation extends ProfileRepository {
           });
       return Right(ProfileModel.fromJson(data.data));
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         print(error.response!.data.toString());
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {

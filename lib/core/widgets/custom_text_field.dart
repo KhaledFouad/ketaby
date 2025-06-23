@@ -5,7 +5,7 @@ import 'package:ketaby/core/utils/app_styles.dart';
 
 class CustomTextField extends StatelessWidget {
   const CustomTextField({
-    Key? key,
+    super.key,
     required this.controller,
     required this.validator,
     required this.title,
@@ -19,7 +19,7 @@ class CustomTextField extends StatelessWidget {
     this.paddingForBottom,
     this.maxLines,
     this.readOnly = false,
-  }) : super(key: key);
+  });
   final TextEditingController controller;
   final String? Function(String?)? validator;
   final String title;

@@ -5,7 +5,7 @@ import 'package:ketaby/feature/order/presentation/cubits/get_governorates_cubit/
 import 'package:ketaby/feature/order/presentation/cubits/get_governorates_cubit/get_governorates_state.dart';
 
 class GovernoratesDropdown extends StatelessWidget {
-  const GovernoratesDropdown({Key? key}) : super(key: key);
+  const GovernoratesDropdown({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,10 +19,10 @@ class GovernoratesDropdown extends StatelessWidget {
             items: state.governoratesModel.data!
                 .map(
                   (e) => DropdownMenuItem(
-                value: e,
-                child: Text(e.governorateNameEn!),
-              ),
-            )
+                    value: e,
+                    child: Text(e.governorateNameEn!),
+                  ),
+                )
                 .toList(),
             onChange: (value) {
               GetGovernoratesCubit.get(context).dropdownValue =

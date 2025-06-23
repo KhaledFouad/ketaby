@@ -8,7 +8,7 @@ import 'package:ketaby/feature/onboarding/presentation/cubit/onboarding_cubit.da
 import 'package:ketaby/feature/onboarding/presentation/cubit/onboarding_state.dart';
 
 class OnBoardingPageView extends StatelessWidget {
-  const OnBoardingPageView({Key? key}) : super(key: key);
+  const OnBoardingPageView({super.key});
 
   @override
   Widget build(BuildContext context) {

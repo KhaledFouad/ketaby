@@ -7,7 +7,7 @@ import 'package:ketaby/feature/authentication/presentation/cubits/register_cubit
 import 'package:ketaby/feature/authentication/presentation/cubits/register_cubit/register_state.dart';
 
 class RegisterTextsFieldsSection extends StatelessWidget {
-  const RegisterTextsFieldsSection({Key? key}) : super(key: key);
+  const RegisterTextsFieldsSection({super.key});
 
   @override
   Widget build(BuildContext context) {

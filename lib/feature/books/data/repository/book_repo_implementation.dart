@@ -24,7 +24,7 @@ class BookRepositoryImplementation extends BookRepository {
         return Product.fromJson(product);
       }).toList());
     } catch (error) {
-      if (error is DioError) {
+      if (error is DioException) {
         return Left(ServerFailure(error.response!.data['message'].toString()));
       } else {
         return Left(ServerFailure(error.toString()));

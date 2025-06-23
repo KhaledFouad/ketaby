@@ -126,7 +126,7 @@ void main() async {
 }
 
 class KetabyApp extends StatelessWidget {
-  const KetabyApp({Key? key}) : super(key: key);
+  const KetabyApp({super.key});
 
   @override
   Widget build(BuildContext context) {

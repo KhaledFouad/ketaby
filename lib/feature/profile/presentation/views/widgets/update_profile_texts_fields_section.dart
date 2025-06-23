@@ -3,7 +3,7 @@ import 'package:ketaby/core/widgets/custom_text_field.dart';
 import 'package:ketaby/feature/profile/presentation/cubits/update_user_profile_cubit/update_user_profile_cubit.dart';
 
 class UpdateProfileTextsFieldsSection extends StatelessWidget {
-  const UpdateProfileTextsFieldsSection({Key? key}) : super(key: key);
+  const UpdateProfileTextsFieldsSection({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -16,9 +16,9 @@ import 'package:ketaby/feature/profile/presentation/cubits/get_user_profile_cubi
 class HomeView extends StatefulWidget {
   // final User user;
   const HomeView({
-    Key? key,
+    super.key,
     // required this.user
-  }) : super(key: key);
+  });
 
   @override
   State<HomeView> createState() => _HomeViewState();
